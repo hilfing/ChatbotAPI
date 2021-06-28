@@ -11,9 +11,9 @@ setuptools.setup(
     description="Brainshop API handler to make AI chatbot",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/pypa/sampleproject",
+    url="https://github.com/hilfing/BrainshopChatbotAPI",
     project_urls={
-        "Bug Tracker": "https://github.com/pypa/sampleproject/issues",
+        "Bug Tracker": "https://github.com/hilfing/BrainshopChatbotAPI/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3",
@@ -22,5 +22,6 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
+    install_requires=['requests'],
     python_requires=">=3.9.5",
 )
