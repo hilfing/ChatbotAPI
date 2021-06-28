@@ -3,7 +3,6 @@
  
  #How to use?  
  There are only 2 commands in this package.(more will be added soon)  
- The function structure is `BrainshopChatbotAPI.chatbasics.sendmsg(<text to be sent to the AI>)`.  
  To use it just do  
  ```
  from BrainshopChatbotAPI.chatbasics import sendmsg, chatbotsetup  
