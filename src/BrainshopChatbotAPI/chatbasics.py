@@ -15,9 +15,6 @@ def setup(brainid, apikeyuser, uiiduser):
     uiid = uiiduser
 
 def sendmsg(message1):
-    if brain == "156099":
-        print("This BrainID is reserved. Pls use setup() to set your own id.")
-        return "Reserved BrainID"
     msg = message1
     PARAMS = {
         'bid': brain,
