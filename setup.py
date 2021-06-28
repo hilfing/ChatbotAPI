@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="BrainshopChatbotAPI",
-    version="0.5",
+    version="0.5.dev1",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
     description="Brainshop API handler to make AI chatbot",
@@ -16,12 +16,13 @@ setuptools.setup(
         "Bug Tracker": "https://github.com/hilfing/BrainshopChatbotAPI/issues",
     },
     classifiers=[
-        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.9",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
+	'Intended Audience :: Developers'
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
     install_requires=['requests'],
-    python_requires=">=3.9.5",
+    python_requires='>=3',
 )
