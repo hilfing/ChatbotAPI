@@ -1,8 +1,5 @@
 
 import requests
-import tkinter
-from tkinter import *
-
 
 
 URL = "http://api.brainshop.ai/get"
@@ -24,5 +21,3 @@ def sendmsg(message1):
     }
     data = requests.get(url=URL, params=PARAMS).json()['cnt']
     return data
-
-
