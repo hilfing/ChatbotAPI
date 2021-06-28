@@ -9,7 +9,10 @@ apikey = ""
 uiid = ""
 msg = ""
 
-def setup(brainid, apikeyuser, uiiduser):
+def chatbotsetup(brainid, apikeyuser, uiiduser = "PythonChatbot"):
+    global brain
+    global apikey
+    global uiid
     brain = brainid
     apikey = apikeyuser
     uiid = uiiduser
@@ -23,4 +26,8 @@ def sendmsg(message1):
         'msg': msg
     }
     data = requests.get(url=URL, params=PARAMS).json()['cnt']
+    
     return data
+
+
+                                                                                                                                                                                                                                                               
