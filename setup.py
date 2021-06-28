@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="BrainshopChatbotAPI",
-    version="1.0.dev2",
+    version="1.0.2",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
     description="Brainshop API handler to make AI chatbot",

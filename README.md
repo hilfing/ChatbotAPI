@@ -14,11 +14,14 @@
  1. To get Brain Id and other info go to [BrainShop](https://brainshop.ai)
  2. Make an account
  3. Make a brain and don't change any settings
- 4. Go to the settings tab and copy the BrainID and APIkey and then use it
-    PS: To use your own uid just do `chatbotsetup("Brain ID","API Key")`
+ 4. Go to the settings tab and copy the BrainID and APIkey and then use it  
+    PS: To use your own uid just do `chatbotsetup("Brain ID","API Key","UID")`
  5. Voila! It works! Now enjoy your AI chatbot.
  Thats All
  
  #How to install it
  Do `py -m pip install BrainshopChatbotAPI` and you are done.
- Website - [BrainshopChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)
+
+
+ PackageWebsite - [BrainshopChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)
+ AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)
