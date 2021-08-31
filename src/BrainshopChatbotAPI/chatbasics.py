@@ -1,5 +1,5 @@
 import requests
-
+import pyjokes
 
 URL = "http://api.brainshop.ai/get"
 
@@ -19,6 +19,9 @@ def chatbotsetup(brainid, apikeyuser, uiiduser = "PythonChatbot"):
 
 def sendmsg(message1):
     msg = message1
+    if 'jokes' in msg or 'joke' in msg :
+        data = "Here is a joke : " + pyjokes.get_joke()
+        return data
     PARAMS = {
         'bid': brain,
         'key': apikey,
@@ -30,6 +33,4 @@ def sendmsg(message1):
     return data
 
 
-
-
-                                                                                                                                                                                                                                                               
+                                                                                                                                                                                                                                                              
