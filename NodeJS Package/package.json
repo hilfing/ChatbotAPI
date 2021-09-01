@@ -1,0 +1,28 @@
+{
+  "name": "chatbotapi",
+  "version": "1.0.0",
+  "description": "API handler to make AI chatbot",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hilfing/ChatbotAPI.git"
+  },
+  "keywords": [
+    "package",
+    "api",
+    "chatbot",
+    "ai"
+  ],
+  "author": "HilFing",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hilfing/ChatbotAPI/issues"
+  },
+  "homepage": "https://github.com/hilfing/ChatbotAPI#readme",
+  "dependencies": {
+    "axios": "^0.21.1"
+  }
+}

@@ -116,3 +116,6 @@ dmypy.json
 #Others
 package/src/chatbotapi/venv
 .pypirc
+
+
+NodeJS Package/node_modules
