@@ -33,5 +33,5 @@ bot.sendmsg("Hi")
  Can say jokes.  
 
 
- PackageWebsite - [BrainshopChatbotAPI on NPM](https://www.npmjs.com/package/chatbotapi)  
+ PackageWebsite - [ChatbotAPI on NPM](https://www.npmjs.com/package/chatbotapi)  
  AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)  
