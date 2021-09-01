@@ -1,11 +1,11 @@
-# BrainshopChatbotAPI  
+# ChatbotAPI  
  An python package to make it easier to connect to the brainshop API and make a working AI chatbot  
  
  #How to use?  
  There are only 2 commands in this package.(more will be added soon)  
  To use it just do  
  ```
- from BrainshopChatbotAPI.chatbasics import sendmsg, chatbotsetup  
+ from ChatbotAPI.chatbasics import sendmsg, chatbotsetup  
  chatbotsetup("Brain ID","API Key")  
  data = sendmsg("HI")  
  print(data)  
@@ -19,7 +19,7 @@
  Thats All  
  
  #How to install it  
- Do `py -m pip install BrainshopChatbotAPI` and you are done.  
+ Do `py -m pip install ChatbotAPI` and you are done.  
 
 
  PackageWebsite - [BrainshopChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)  

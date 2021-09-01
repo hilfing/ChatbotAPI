@@ -4,16 +4,16 @@ with open("README.md", "r", encoding="utf-8") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="BrainshopChatbotAPI",
-    version="1.1",
+    name="ChatbotAPI",
+    version="1.2",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
     description="Brainshop API handler to make AI chatbot",
     long_description=long_description,
     long_description_content_type="text/markdown",
-    url="https://github.com/hilfing/BrainshopChatbotAPI",
+    url="https://github.com/hilfing/ChatbotAPI",
     project_urls={
-        "Bug Tracker": "https://github.com/hilfing/BrainshopChatbotAPI/issues",
+        "Bug Tracker": "https://github.com/hilfing/ChatbotAPI/issues",
     },
     classifiers=[
         "Programming Language :: Python :: 3.9",

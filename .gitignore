@@ -115,3 +115,4 @@ dmypy.json
 
 #Others
 package/src/chatbotapi/venv
+.pypirc
