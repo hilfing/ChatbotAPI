@@ -27,5 +27,5 @@
  Can say jokes.  
 
 
- PackageWebsite - [BrainshopChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)  
+ PackageWebsite - [BrainshopChatbotAPI on Pypi](https://pypi.org/project/ChatbotAPI/)  
  AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)  
