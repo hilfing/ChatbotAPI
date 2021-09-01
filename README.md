@@ -57,5 +57,5 @@ bot.sendmsg("Hi")
 
 
 
- PackageWebsite - [ChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)  |  [ChatbotAPI on NPM JS](https://www.npmjs.com/package/chatbotapi)
+ PackageWebsite - [ChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)  |  [ChatbotAPI on NPM JS](https://www.npmjs.com/package/chatbotapi)  
  AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)  
