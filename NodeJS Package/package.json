@@ -1,6 +1,6 @@
 {
   "name": "chatbotapi",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "API handler to make AI chatbot",
   "main": "index.js",
   "scripts": {
