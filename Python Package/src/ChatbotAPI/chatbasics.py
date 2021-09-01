@@ -30,6 +30,14 @@ def sendmsg(message1):
     if 'jokes' in msg or 'joke' in msg :
         data = "Here is a joke : " + pyjokes.get_joke()
         return data
+    if 'wikipedia' in msg:
+        try:
+            statement = msg.replace("wikipedia", "")
+            r = wikipedia.search(statement)
+            results = "According to Wikipedia :\n" + wikipedia.summary(r[0], sentences=3)
+            return results
+        except IndexError:
+            return "No results found."
     PARAMS = {
         'bid': brain,
         'key': apikey,
