@@ -22,9 +22,9 @@
  Thats All  
  
  # Features
- AI Chatbot. Can make interesting conversations.
- Can do math.
- Can say jokes.
+ AI Chatbot. Can make interesting conversations.  
+ Can do math.  
+ Can say jokes.  
 
 
  PackageWebsite - [BrainshopChatbotAPI on Pypi](https://pypi.org/project/BrainshopChatbotAPI/)  

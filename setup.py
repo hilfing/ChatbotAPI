@@ -5,10 +5,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ChatbotAPI",
-    version="1.2",
+    version="1.2.2",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
-    description="Brainshop API handler to make AI chatbot",
+    description="API handler to make AI chatbot",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hilfing/ChatbotAPI",
