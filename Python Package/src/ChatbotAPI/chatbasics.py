@@ -16,6 +16,14 @@ def chatbotsetup(brainid, apikeyuser, uiiduser = "PythonChatbot"):
     brain = brainid
     apikey = apikeyuser
     uiid = uiiduser
+    
+def getcreds():
+    creds = {
+        'bid': brain,
+        'key': apikey,
+        'uid': uiid,
+    }
+    return creds
 
 def sendmsg(message1):
     msg = message1
