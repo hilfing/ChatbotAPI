@@ -1,5 +1,6 @@
 # ChatbotAPI  
  An package to make it easier to connect to the brainshop API and make a working AI chatbot  
+ ####Versions - [Python-Pypi](https://github.com/hilfing/ChatbotAPI#python) |  [NodeJS-NPM](https://github.com/hilfing/ChatbotAPI#node-js)
  
 # Features
  AI Chatbot. Can make interesting conversations.  
