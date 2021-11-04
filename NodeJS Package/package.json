@@ -24,8 +24,8 @@
   },
   "homepage": "https://github.com/hilfing/ChatbotAPI#readme",
   "dependencies": {
-    "axios": "^0.21.1",
+    "axios": "^0.21.4",
     "one-liner-joke": "^1.2.2",
-    "wikipedia": "^1.1.5"
+    "wikipedia": "^1.1.6"
   }
 }

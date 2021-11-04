@@ -6,11 +6,12 @@ const EventEmitter = require('events')
 const errors = require('./error');
 const event = new EventEmitter()
 const brainshopurl = "http://api.brainshop.ai/get"
-fs.writeFile("chatbot.log", "ChatBotAPI Logs :-\n\n", (err) => {
+async function clearlogfile() {fs.writeFile("chatbot.log", "ChatBotAPI Logs :-\n\n", (err) => {
     if (err) {
       console.log(err);
     }
-})
+})}
+clearlogfile()
 let bid = "undefined";
 let apikey = "undefined";
 let jokefilter = {'exclude_tags': ['dirty', 'racist', 'marriage', 'sex']}
