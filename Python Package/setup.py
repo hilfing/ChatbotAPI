@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ChatbotAPI",
-    version="2.0.0",
+    version="2.1.2",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
     description="Lib to make AI chatbot with other additional utilities",
@@ -14,6 +14,7 @@ setuptools.setup(
     url="https://github.com/hilfing/ChatbotAPI",
     project_urls={
         "Bug Tracker": "https://github.com/hilfing/ChatbotAPI/issues",
+        "Wiki": "https://github.com/hilfing/ChatbotAPI/wiki/Python"
     },
     classifiers=[
         "Programming Language :: Python :: 3.9",
@@ -23,6 +24,6 @@ setuptools.setup(
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    install_requires=['requests','pyjokes','wikipedia','textblob'],
+    install_requires=['requests','pyjokes','textblob'],
     python_requires='>=3',
 )

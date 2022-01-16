@@ -22,14 +22,16 @@
  7. Voila! It works! Now enjoy your AI chatbot.  
  Thats All  
  
+ 
  ## Features
- AI Chatbot.  
- Can make interesting conversations.  
+ AI Chatbot. Can make interesting conversations.  
  Can do math.  
  Can say jokes.  
+ Has history function and debugging with logs.  
+ Support multiple bot instances with different settings    
 
  ## Docs  
-[Docs](./docs/doc.md)
+[Wiki](https://github.com/hilfing/ChatbotAPI/wiki/Python)  
 
  PackageWebsite - [ChatbotAPI on Pypi](https://pypi.org/project/ChatbotAPI/)  
  AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)  
