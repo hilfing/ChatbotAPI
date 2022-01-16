@@ -28,7 +28,8 @@
  Can do math.  
  Can say jokes.  
 
- ## [Docs](./docs/doc.md)
+ ## Docs  
+[Docs](./docs/doc.md)
 
  PackageWebsite - [ChatbotAPI on Pypi](https://pypi.org/project/ChatbotAPI/)  
  AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)  
