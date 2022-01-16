@@ -9,10 +9,12 @@
  Has history function and debugging with logs.  
  Support multiple bot instances with different settings  
  
- ## [Python](./Python Package/README.md)  
+ ## Python  
+ [python](./Python Package/README.md)  
  
  
- ## [Node JS](./NodeJS Package/README.md)  
+ ## Node JS  
+ [nodejs](./NodeJS Package/README.md)  
  
 
 
