@@ -10,11 +10,11 @@
  Support multiple bot instances with different settings  
  
  ## Python  
- [python](./Python Package/README.md)  
+ [python](Python Package/README.md)  
  
  
  ## Node JS  
- [nodejs](./NodeJS Package/README.md)  
+ [nodejs](NodeJS Package/README.md)  
  
 
 
