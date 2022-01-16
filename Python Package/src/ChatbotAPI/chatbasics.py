@@ -1,6 +1,8 @@
 import requests
 import pyjokes
 from datetime import datetime
+from itertools import islice
+import utils
 import errors
 
 URL = "http://api.brainshop.ai/get"
@@ -12,18 +14,20 @@ class ChatBot:
         self.brain = brainid
         self.apikey = apikeyuser
         self.uiid = uiiduser
+        self.authorname = "HilFing"
+        self.link = "https://github.com/hilfing/ChatbotAPI"
+        self.spelling = False
         self.debug = {
             'debug': debug,
             'history': history
         }
-        if history:
-            self.debugdata = {
-                'history': [
-                ],
-                'logs': [
-                ]
-            }
-        self.__writelog(["Bot Initialised", "Bot Credentials : " + str(self.getcreds())],"logs")
+        self.__debugdata = {
+            'history': [
+            ],
+            'logs': [
+            ]
+        }
+        self.__writelog(["Bot Initialised", "Bot Credentials : " + str(self.getcreds())], "logs")
 
     def getcreds(self):
         creds = {
@@ -33,8 +37,24 @@ class ChatBot:
         }
         return creds
 
+    def author(self):
+        return self.authorname
+
+    def link(self):
+        return self.link
+
+    def spellcheck(self, val):
+        if val is not True or val is not False:
+            errors.ArgumentError("Value must be boolean")
+        self.spelling = val
+
     def sendmsg(self, message1):
         msg = message1
+        if self.spelling is True:
+            x = utils.correction(msg)
+            if not msg == x:
+                print("User input autocorrected")
+                self.__writelog(["Input received", "Spell Check done"], "logs")
         self.__writelog(["Input received"], "logs")
         data = ""
         done = 0
@@ -50,10 +70,11 @@ class ChatBot:
         if params['bid'] == "" or params['key'] == "" or params['uid'] == "":
             raise errors.BaseError("ChatBot not setup properly!")
         elif done == 0:
-            data = requests.get(url=URL, params=params).json()['cnt']
+            r = requests.get(url=URL, params=params)
+            data = r.json()['cnt']
             done = 1
         if done == 1:
-            self.__writelog(["Reply Received"], "logs")
+            self.__writelog(["Reply Received", "Response status_code = " + str(r.status_code)], "logs")
             self.__writelog([msg, data], "history")
             return data
         else:
@@ -61,18 +82,38 @@ class ChatBot:
 
     def __writelog(self, data, logtype):
         if logtype == "history" and self.debug['history'] is True:
-            self.debugdata['history'].extend(["User : " + data[0], "Bot : " + data[1]])
+            self.__debugdata['history'].extend(["User : " + data[0], "Bot : " + data[1]])
         elif logtype == "logs" and self.debug['debug'] is True:
-            self.debugdata['logs'].append("[" + datetime.now().strftime("%d/%m/%Y %H:%M:%S") + "]")
+            self.__debugdata['logs'].append("[" + datetime.now().strftime("%d/%m/%Y %H:%M:%S") + "]")
             for i in data:
-                self.debugdata['logs'].append(i)
+                self.__debugdata['logs'].append(i)
+            self.__debugdata['logs'].append("")
 
     def printlogs(self, filename="Chatbot.log"):
+        if self.debug['debug'] is False:
+            raise errors.BaseError("Debug not enabled while creating bot")
         f = open(filename, "w+")
-        for i in self.debugdata['logs']:
-            print(i)
+        for i in self.__debugdata['logs']:
             f.write(i)
             f.write("\n")
         f.close()
+        print("Logs written to " + filename)
 
-bot = ChatBot("156099", "4TG9iu82pFOu9XjD","Test", True, True)
+    def gethistory(self, length="all"):
+        if self.debug['history'] is False:
+            raise errors.BaseError("History has not been enabled while creating bot")
+        his_len = len(self.__debugdata['history'])
+        if length == "all" or length == 0:
+            length = his_len
+        if length > his_len or not length % 2 == 0:
+            raise errors.ArgumentError("Length argument is not even or larger than history length.")
+        his = self.__debugdata['history']
+        data = iter(his)
+        split = [his_len - length, length]
+        output = [list(islice(data, elem))
+                  for elem in split]
+        output[1].insert(0, "Here is your History:")
+        return output[1]
+
+
+print("ChatBotAPI by HilFing initialised.\nThank you for using this library.\n\n")

@@ -5,20 +5,21 @@
  Do `py -m pip install ChatbotAPI` and you are done.  
  
  ## How to use?  
- There are only 2 commands in this package.(more will be added soon)  
+ There are various commands and utilities in this package.
  To use it just do  
  ```
- from ChatbotAPI.chatbasics import sendmsg, chatbotsetup  
- chatbotsetup("Brain ID","API Key")  
- data = sendmsg("HI")  
+ from ChatbotAPI.chatbasics import Chatbot
+ bot = Chatbot(BrainId, ApiKey, BotName, history, debug)
+ data = bot.sendmsg("Hi")  
  print(data)  
  ```
  1. To get Brain Id and other info go to [BrainShop](https://brainshop.ai)  
  2. Make an account  
  3. Make a brain and don't change any settings  
  4. Go to the settings tab and copy the BrainID and APIkey and then use it  
-    PS: To use your own uid just do `chatbotsetup("Brain ID","API Key","UID")`  
- 5. Voila! It works! Now enjoy your AI chatbot.  
+ 5. Use boolean for history and debug switch.  
+ 6. To turn on spellchecker use `bot.spellcheck(True)`  
+ 7. Voila! It works! Now enjoy your AI chatbot.  
  Thats All  
  
  ## Features
@@ -27,6 +28,7 @@
  Can do math.  
  Can say jokes.  
 
+ ## [Docs](./docs/doc.md)
 
  PackageWebsite - [ChatbotAPI on Pypi](https://pypi.org/project/ChatbotAPI/)  
  AuthorWebsite - [PaulStudios](https://paulstudios.great-site.net)  
