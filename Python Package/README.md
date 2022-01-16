@@ -8,8 +8,8 @@
  There are various commands and utilities in this package.
  To use it just do  
  ```
- from ChatbotAPI.chatbasics import Chatbot
- bot = Chatbot(BrainId, ApiKey, BotName, history, debug)
+ from ChatbotAPI import ChatBot
+ bot = ChatBot(BrainId, ApiKey, BotName, history, debug)
  data = bot.sendmsg("Hi")  
  print(data)  
  ```
