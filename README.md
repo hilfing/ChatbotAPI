@@ -10,11 +10,11 @@
  Support multiple bot instances with different settings  
  
  ## Python  
- [python](./Python Package/README.md)  
+ [python](https://github.com/hilfing/ChatbotAPI/blob/main/Python%20Package/README.md)  
  
  
  ## Node JS  
- [nodejs](./NodeJS Package/README.md)  
+ [nodejs](https://github.com/hilfing/ChatbotAPI/blob/main/NodeJS%20Package/README.md)  
  
 
 
