@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ChatbotAPI",
-    version="2.3.0",
+    version="2.3.1",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
     description="Lib to make AI chatbot with other additional utilities",
@@ -17,7 +17,7 @@ setuptools.setup(
         "Wiki": "https://github.com/hilfing/ChatbotAPI/wiki/Python"
     },
     classifiers=[
-        "Programming Language :: Python :: 3.9",
+        "Programming Language :: Python :: 3.10",
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
 	'Intended Audience :: Developers'

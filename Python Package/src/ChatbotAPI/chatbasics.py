@@ -46,14 +46,15 @@ class ChatBot:
 
     def spellcheck(self, val):
         if val is not True or val is not False:
-            ArgumentError("Value must be boolean")
+            raise ArgumentError("Value must be boolean")
         self.spelling = val
 
     def changename(self, name):
         if not name == "":
             self.uiid = name
+            self.__writelog(["Bot Name Changed.", "New Bot Credentials : " + str(self.getcreds())], "logs")
         else:
-            ArgumentError("Incorrect argument passed")
+            raise ArgumentError("Incorrect argument passed")
 
     def sendmsg(self, message1):
         msg = message1
