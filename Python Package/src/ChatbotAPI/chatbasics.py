@@ -48,6 +48,7 @@ class ChatBot:
         if val is not True or val is not False:
             raise ArgumentError("Value must be boolean")
         self.spelling = val
+        self.__writelog(["Spellcheck set to " + val], "logs")
 
     def changename(self, name):
         if not name == "":
