@@ -45,7 +45,7 @@ class ChatBot:
         return self.link
 
     def spellcheck(self, val):
-        if val is not True or val is not False:
+        if val is not True and val is not False:
             raise ArgumentError("Value must be boolean")
         self.spelling = val
         self.__writelog(["Spellcheck set to " + val], "logs")
