@@ -5,7 +5,7 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ChatbotAPI",
-    version="2.3.2",
+    version="2.3.3",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
     description="Lib to make AI chatbot with other additional utilities",
