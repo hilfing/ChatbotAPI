@@ -1,3 +1,6 @@
+# pylint: disable = C0114
+# pylint: disable = E0401
+
 """
 Basic utility functions for the bot
 """

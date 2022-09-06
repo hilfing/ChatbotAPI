@@ -1,6 +1,8 @@
 # pylint: disable = R0902
 # pylint: disable = R0913
 # pylint: disable = R1714
+# pylint: disable = C0114
+# pylint: disable = E0401
 
 """
 Main File
