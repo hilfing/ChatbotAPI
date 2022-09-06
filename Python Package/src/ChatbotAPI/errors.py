@@ -1,6 +1,10 @@
+"""
+Error handling for chatbot_api
+"""
+
 class ArgumentError(Exception):
-    pass
+    """Argument Error"""
 
 
 class BaseError(Exception):
-    pass
+    """Base Error"""
