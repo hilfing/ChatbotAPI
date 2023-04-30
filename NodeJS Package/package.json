@@ -26,6 +26,6 @@
   "dependencies": {
     "axios": "^1.2.1",
     "one-liner-joke": "^1.2.2",
-    "wikipedia": "^1.1.6"
+    "wikipedia": "^2.0.0"
   }
 }
