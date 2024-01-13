@@ -153,4 +153,4 @@ class ChatBot:
         return data_input + data_output
 
 
-print("ChatBotAPI by HilFing initialised.\nThank you for using this library.\n\n")
+print("ChatBotAPI by HilFing initialised.\nThank you for using this library.\n")
