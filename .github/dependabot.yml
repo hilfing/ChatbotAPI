@@ -6,11 +6,11 @@
 version: 2
 updates:
   - package-ecosystem: "npm" # See documentation for possible values
-    directory: "NodeJS Package/" # Location of package manifests
+    directory: "NodeJS_Package/" # Location of package manifests
     schedule:
       interval: "daily"
   - package-ecosystem: "pip" # See documentation for possible values
-    directory: "Python Package/" # Location of package manifests
+    directory: "Python_Package/" # Location of package manifests
     schedule:
       interval: "daily"
   - package-ecosystem: "github-actions"

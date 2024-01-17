@@ -8,10 +8,10 @@ with open("README.md", "r", encoding="utf-8") as fh:
 
 setuptools.setup(
     name="ChatbotAPI",
-    version="2.3.3",
+    version="2.5",
     author="HilFing",
     author_email="indradip.paul@outlook.com",
-    description="Lib to make AI chatbot with other additional utilities",
+    description="Library to make AI chatbot with other additional utilities",
     long_description=long_description,
     long_description_content_type="text/markdown",
     url="https://github.com/hilfing/ChatbotAPI",
@@ -20,13 +20,15 @@ setuptools.setup(
         "Wiki": "https://github.com/hilfing/ChatbotAPI/wiki/Python"
     },
     classifiers=[
-        "Programming Language :: Python :: 3.10",
-        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3.13",
+        "License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
         "Operating System :: OS Independent",
-	'Intended Audience :: Developers'
+        'Intended Audience :: Developers',
+        "Environment :: Console",
+        "Natural Language :: English",
     ],
     package_dir={"": "src"},
     packages=setuptools.find_packages(where="src"),
-    install_requires=['requests','pyjokes','textblob'],
+    install_requires=['requests', 'pyjokes', 'textblob'],
     python_requires='>=3',
 )
