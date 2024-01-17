@@ -86,9 +86,11 @@ class ChatBot:
         self.__writelog(["Input received"], "logs")
         data = ""
         done = 0
+        status = 0
         if 'jokes' in msg or 'joke' in msg and done == 0:
             data = "Here is a joke : " + pyjokes.get_joke()
             done = 1
+            status = "'Pyjoke'"
         params = {
             'bid': self.brain,
             'key': self.apikey,
@@ -100,10 +102,11 @@ class ChatBot:
         if done == 0:
             response = requests.get(url=URL, params=params, timeout=10)
             data = response.json()['cnt']
+            status = response.status_code
             done = 1
         if done == 1:
             self.__writelog(
-                ["Reply Received", "Response status_code = " + str(response.status_code)], "logs")
+                ["Reply Received", "Response status_code = " + str(status)], "logs")
             self.__writelog([msg, data], "history")
             return data
         raise BaseError("Internal Error!")
@@ -148,9 +151,6 @@ class ChatBot:
         output[1].insert(0, "Here is your History:")
         return output[1]
 
-    def adddata(self, data_input, data_output):
-        """Add custom data to bot"""
-        return data_input + data_output
-
-
-print("ChatBotAPI by HilFing initialised.\nThank you for using this library.\n")
+    def adddata(self, data: dict):
+        """Add custom data to bot. (In production)"""
+        return data
