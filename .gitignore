@@ -196,5 +196,5 @@ fabric.properties
 Procfile
 
 # JS
-NodeJS Package/node_modules
-NodeJS Package/chatbot.log
+NodeJS_Package/node_modules
+NodeJS_Package/chatbot.log
